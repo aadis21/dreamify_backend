@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: ["domain-name", "http://localhost:5173"],
+    origin: ["https://dreamifys.com/", "http://localhost:5173 " ,],
     credentials: true,
   })
 );
