@@ -28,7 +28,7 @@ const adminController = asyncHandler(async (req, res) => {
   res.cookie("token", token, {
     httpOnly: true,
     secure: true,
-    sameSite: "strict",
+    sameSite: "None",
   });
 
   return res.status(200).json({ message: "Login successful!" });
